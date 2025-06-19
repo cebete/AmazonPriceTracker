@@ -24,6 +24,7 @@ def printMenu():
     print("What do you want to do?")
     print("1) Add new amazon link for tracking")
     print("2) Check the prices for existing items")
+    print("3) Exit")
 
 def fetchPrice(link):
     targetLink = link
@@ -112,6 +113,9 @@ def main():
             addProduct(data)
         elif choice == "2":
             checkPrices(data)
+        elif choice == "3":
+            print("Goodbye!")
+            break
         else:
             print("❌ Invalid choice.")
 
